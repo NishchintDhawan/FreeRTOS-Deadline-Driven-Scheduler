@@ -1,0 +1,15 @@
+core_cm4.h:1037:22:NVIC_SetPriorityGrouping	24	static
+main.c:156:5:main	24	static
+main.c:182:6:vTask1_TimerCallback	24	static
+main.c:188:6:vTask2_TimerCallback	24	static
+main.c:194:6:vTask3_TimerCallback	24	static
+main.c:204:6:PeriodicTask_1	32	static
+main.c:219:6:PeriodicTaskGenerator_1	32	static
+main.c:237:6:PeriodicTask_2	32	static
+main.c:250:6:PeriodicTaskGenerator_2	32	static
+main.c:267:6:PeriodicTask_3	32	static
+main.c:281:6:PeriodicTaskGenerator_3	32	static
+main.c:299:6:vApplicationMallocFailedHook	4	static
+main.c:313:6:vApplicationStackOverflowHook	16	static
+main.c:327:6:vApplicationIdleHook	16	static
+main.c:349:13:prvSetupHardware	8	static
