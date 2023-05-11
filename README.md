@@ -1,6 +1,6 @@
 # FreeRTOS-Deadline-Driven-Scheduler
 
-There are 4 core tasks performed by the Deadline Driven Scheduler (DDS) - 
+There are 4 core tasks performed by the Deadline-Driven Scheduler (DDS) - 
 
 ## Deadline-Driven Scheduler Task
 This is the FreeRTOS task which runs the main scheduler. It is responsible for managing DDS tasks in an active list by determining their priorities. It must also manage the tasks which are completed (meet their deadline) and which are overdue (did not meet their deadline) in a completed and
