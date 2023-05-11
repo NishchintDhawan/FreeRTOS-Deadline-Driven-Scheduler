@@ -3,7 +3,7 @@
 A Deadline-driven task scheduler using FreeRTOS on an STM32F4 Discovery board for ECE 455 at UVic.
  
  
-## Project Specification 
+## Project Design and Specification 
 
 There are 4 core tasks performed by the Deadline-Driven Scheduler (DDS) - 
 
