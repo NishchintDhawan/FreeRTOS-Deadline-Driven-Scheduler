@@ -1,17 +1,20 @@
 # FreeRTOS-Deadline-Driven-Scheduler
 
-A Deadline-driven task scheduler using FreeRTOS on an STM32F4 Discovery board for ECE 455 at UVic
+A Deadline-driven task scheduler using FreeRTOS on an STM32F4 Discovery board for ECE 455 at UVic.
  
+ 
+## Project Specification 
+
 There are 4 core tasks performed by the Deadline-Driven Scheduler (DDS) - 
 
-## Deadline-Driven Scheduler Task
+### Deadline-Driven Scheduler Task
 This is the FreeRTOS task which runs the main scheduler. It is responsible for managing DDS tasks in an active list by determining their priorities. It must also manage the tasks which are completed (meet their deadline) and which are overdue (did not meet their deadline) in a completed and
 overdue list respectively.
-## Deadline-Driven Task Generator Task
+### Deadline-Driven Task Generator Task
 This is responsible for creating the tasks for the DDS to schedule. It creates the task structure, initialises values for it and sends it to the DDS using queues. It runs periodically to generate tasks.
-## User-Defined Tasks
+### User-Defined Tasks
 These are the tasks which contain the actual task to be run. For this experiment an empty loop runs for a given amount of time to simulate running of actual tasks. Whenever they are completed, they send the message to the DDS using queues to notify about their completion.
-## Monitor Task
+### Monitor Task
 This task is used to report the status of the DDS and our tasks periodically (every hyper period). It gets the information of the lists from our DDS and reports them to the user. For simplicity in this experiment, it simply prints the information to our console. 
 <br>
 
